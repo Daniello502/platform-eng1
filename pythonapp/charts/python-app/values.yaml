@@ -45,11 +45,11 @@ resources:
 livenessProbe:
   httpGet:
     path: /api/v1/healthz
-    port: http
+    port: 5000
 readinessProbe:
   httpGet:
     path: /api/v1/healthz
-    port: http
+    port: 5000
 autoscaling:
   enabled: false
   minReplicas: 1
