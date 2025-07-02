@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: argocd-server-cert # You can choose a name, this is a common convention
+  namespace: argocd
+spec:
+  secretName: argocd-server-tls # This MUST match the secretName in your Ingress
+  dnsNames:
+    - argocd.test.com
+  issuerRef:
+    name: selfsigned-issuer # This MUST match the name of your ClusterIssuer
+    kind: ClusterIssuer # Or 'Issuer' if you defined it as an Issuer
