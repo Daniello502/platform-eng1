@@ -59,4 +59,4 @@ volumes: []
 volumeMounts: []
 nodeSelector: {}
 tolerations: []
-affinity: {}
+affinity: {}  
