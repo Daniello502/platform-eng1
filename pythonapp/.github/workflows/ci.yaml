@@ -1,14 +1,14 @@
-name: CI Pipeline
+name: ci
 
 on:
   push:
-    branches:
-      - main
     paths:
       - src/**
+    branches:
+      - main
 
 jobs:
-  build-and-push:
+  ci:
     runs-on: ubuntu-latest
     steps:
 
