@@ -10,7 +10,6 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-
     steps:
 
       # Log in to DockerHub
